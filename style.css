@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.container{
+  display: flex;
+  width: 950px;
+  background: #F5F5F5;
+  margin: 23vh auto;
+  border-radius: 10px;
+}
+
+.box-img{
+  width: 70%;
+  background: #242424;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  box-sizing: border-box;
+  border-radius: 10px 0 0 10px;
+
+}
+
+.box-form{
+  background: rgb(235, 232, 232);
+  width: 60%;
+  border-radius: 0 10px 10px 0;
+
+}
+
+/* Button entrar */
+.box-from-btn{
+  display: flex;
+  justify-content: end;
+}
+.box-from-btn button{
+  padding: 10px;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 15px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+  background: #2E558F;
+  color: #fff;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.box-form h1{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.box-input{
+  margin: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+}
+
+.box-input label{
+  margin-left: 8px;
+  padding-bottom: 5px;
+}
+
+.box-input span{
+  position: relative;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 7px;
+  border-radius: 8px;
+  background: #dfdcdc;
+}
+i{
+  color: #6b6a6a;
+}
+
+.box-input input{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 12pt;
+  justify-items: center;
+  margin-left: 10px;
+  background: #dfdcdc;
+  outline: none;
+  border: none;
+}
+
+/* Button cadastrar */
+.box-from-submit button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 50%;
+  margin: 3px auto;
+  border-radius: 8px;
+  font-weight: 600;
+  background: #2E558F;
+  color: #fff;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+/* Responsividade para celular*/
+@media screen and (max-width: 480px) {
+  .container{
+    width: 100%;
+    margin: 20vh auto;
+
+  }
+  .box-form{
+    width: 100%;
+  }
+  .box-from-submit button{
+    margin-bottom: 30px;
+  }
+  .box-img{
+  display: none;
+  }
+
+}
